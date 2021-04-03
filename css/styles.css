@@ -14,6 +14,7 @@ html {
   --accent-color: #2196f3;
   --gray-bgc: #f5f4fa;
   --dark-bgc: #2f303a;
+  --link-icon: #afb1b8;
 }
 
 body {
@@ -257,7 +258,7 @@ button {
   display: flex;
 }
 .about-item {
-  width: calc(100% / 3 - 60px);
+  width: calc(100% / 3 - 60);
 }
 .about-item:not(:last-child) {
   margin-right: 30px;
@@ -295,6 +296,65 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.social-icons {
+  display: inline-flex;
+  margin-top: 16px;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--link-icon);
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--white-text-color);
+}
+
+.company-icons {
+  display: flex;
+  width: calc(100% / 6 - 150);
+}
+.company-icons-item + .company-icons-item {
+  margin-left: 30px;
+}
+
+.company-icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--link-icon);
+  border-radius: 4px;
+  fill: var(--link-icon);
+}
+
+.company-icon-link:hover,
+.company-icon-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .team-card > h3,
