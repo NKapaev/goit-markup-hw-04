@@ -79,6 +79,11 @@ img {
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .list {
   list-style: none;
   padding-left: 0px;
@@ -142,6 +147,7 @@ button {
 .header-link {
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 .navigation {
@@ -180,8 +186,6 @@ button {
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left top;
-
   text-align: center;
 }
 
