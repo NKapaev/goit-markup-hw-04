@@ -398,6 +398,7 @@ p {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .social-item {
@@ -429,6 +430,8 @@ p {
 .footer-strong {
   display: inline-flex;
   color: var(--white-text-color);
+  font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
